@@ -1,6 +1,6 @@
 # Maintainer: D347HL0RD <D347HL0RD@cachyos.org>
 
-pkgname=cachyos-dnscrypt-proxy-git
+pkgname=cachyos-dnscrypt-proxy
 _pkgname=dnscrypt-proxy
 pkgver=2.1.2.r8.gca253923
 pkgrel=1
@@ -12,7 +12,7 @@ depends=(glibc)
 makedepends=(git go)
 optdepends=('python-urllib3: for generate-domains-blocklist')
 provides=(dnscrypt-proxy)
-conflicts=(dnscrypt-proxy cachyos-dnscrypt-proxy)
+conflicts=(dnscrypt-proxy)
 install=$_pkgname.install
 source=(
 	git+https://github.com/dnscrypt/$_pkgname.git
