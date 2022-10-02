@@ -2,7 +2,7 @@
 
 pkgname=cachyos-dnscrypt-proxy
 _pkgname=dnscrypt-proxy
-pkgver=2.1.2.r8.gca253923
+pkgver=2.1.2.r9.g94cba8cf
 pkgrel=1
 pkgdesc="Wipe Snoopers Out Of Your Networks"
 arch=(x86_64 x86_64_v3)
