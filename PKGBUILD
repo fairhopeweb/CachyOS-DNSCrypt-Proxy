@@ -1,4 +1,4 @@
-# Maintainer: D347HL0RD <D347HL0RD@cachyos.org>
+# Maintainer: BL4CKH47H4CK3R <109698175+BL4CKH47H4CK3R@users.noreply.github.com>
 
 pkgname=cachyos-dnscrypt-proxy
 _pkgname=dnscrypt-proxy
@@ -20,7 +20,7 @@ source=(
 	$_pkgname.{service,socket}
 )
 sha512sums=('SKIP'
-            '9fd4b1a3133f610ae6221f6c1393e7adf61a5ee24644e7daa0ac0f66324fd968387e09225c079c48b410cafd78ad83f6ab9322e0ed9a0c894c689bb8051929e3'
+            '30a379ed7bf765d0acc37a06342f85b8975344702d408619224958c7fae688ff2f13927bedd9ff4e4319e861c4cc7f514e8f7c69d4b086cfdac7cea8d9373365'
             'a62fe2b5c8e194931a1c3948b262b0a4ab766c1b649431aabe2ec9e527abd23346fd21d1fc0e25783b9137d278d49256e50f9ca8ed456c59e36b48414607bda2'
             '17175397a5a35692f300d6caff84eb236b21a6e41a870bca966c5576f0db2bc7556d6a214d2f7e985fe9e0be99ef6e0bb067f29cebd41c2ea374540d6f4bd990')
 
