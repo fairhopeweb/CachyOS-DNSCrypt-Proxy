@@ -39,9 +39,9 @@ But For Linux, People Find It Hard To Configure DNSCrypt-Proxy Manually. But I W
 
 - `dnscrypt_ephemeral_keys = true` (create a new, unique key for every single DNS query)
 
-- `bootstrap_resolvers = ['91.239.100.100:53', '89.233.43.71:53']` (use [UncensoredDNS (Anycast & Unicast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://archive.today/tS1Ln))
+- `bootstrap_resolvers = ['84.200.69.80:53', '84.200.70.40:53']` (use [resolver1.dns.watch](https://dns.watch/) and [resolver2.dns.watch](https://dns.watch/) instead [CloudFlare](https://archive.today/tS1Ln))
 
-- `netprobe_address = '91.239.100.100:53'` (use [UncensoredDNS (Anycast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://archive.today/tS1Ln))
+- `netprobe_address = '84.200.69.80:53'` (use [resolver1.dns.watch](https://dns.watch/) instead [CloudFlare](https://archive.today/tS1Ln))
 
 - `block_ipv6 = true` (immediately respond to IPv6-related queries with an empty response)
 
