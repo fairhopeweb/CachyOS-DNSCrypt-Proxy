@@ -2,7 +2,7 @@
 
 pkgname=cachyos-dnscrypt-proxy
 _pkgname=dnscrypt-proxy
-pkgver=2.1.2.r10.gc7486306
+pkgver=2.1.2.r13.g361455cd
 pkgrel=1
 pkgdesc="Wipe Snoopers Out Of Your Networks"
 arch=(x86_64 x86_64_v3)
@@ -20,7 +20,7 @@ source=(
 	$_pkgname.{service,socket}
 )
 sha512sums=('SKIP'
-            'ccee54dc7b3d11e3ed38f95a2a952bfa7057b2ce72940122e3601e8edbbe324679243adbd7ec7c563ad8214f0861e89fbc1dad643f77260c203d446d955b020c'
+            'f5581805fb14ed023a26fe80f6e9276d8044bce2b9f2c12da9d1665a3252df21f984c5669b1d49d668a6a24645807375f337f681e00ce3ba9e6f8e2f9c3b2198'
             'a62fe2b5c8e194931a1c3948b262b0a4ab766c1b649431aabe2ec9e527abd23346fd21d1fc0e25783b9137d278d49256e50f9ca8ed456c59e36b48414607bda2'
             '17175397a5a35692f300d6caff84eb236b21a6e41a870bca966c5576f0db2bc7556d6a214d2f7e985fe9e0be99ef6e0bb067f29cebd41c2ea374540d6f4bd990')
 
