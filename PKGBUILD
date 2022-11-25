@@ -17,12 +17,11 @@ install=$_pkgname.install
 source=(
 	git+https://github.com/dnscrypt/$_pkgname.git
 	$_pkgname.toml
-	$_pkgname.{service,socket}
+	$_pkgname.service
 )
 sha512sums=('SKIP'
-            '2b1b3d34df49bf819b6748506a3b1e4eea184e0c55454489feb92a762e0a5825cb69b7322739f8731f0a001c14c2c45e0f510f5f04251b1f8a1112001dd8fbd0'
-            'a62fe2b5c8e194931a1c3948b262b0a4ab766c1b649431aabe2ec9e527abd23346fd21d1fc0e25783b9137d278d49256e50f9ca8ed456c59e36b48414607bda2'
-            '17175397a5a35692f300d6caff84eb236b21a6e41a870bca966c5576f0db2bc7556d6a214d2f7e985fe9e0be99ef6e0bb067f29cebd41c2ea374540d6f4bd990')
+            'ddecc8f7031292fe5c123d8832265d8a3422d25ecc75358fba81b24e4859ce2e719809c86240031366a4a03a085ed4e656357a58927ee72c34a6d68c261f554f'
+            'a62fe2b5c8e194931a1c3948b262b0a4ab766c1b649431aabe2ec9e527abd23346fd21d1fc0e25783b9137d278d49256e50f9ca8ed456c59e36b48414607bda2')
 
 pkgver() {
 	cd "$_pkgname"
@@ -52,8 +51,8 @@ package() {
 	# utils
 	install -Dm 644 utils/generate-domains-blocklist/*.{conf,txt} -t "$pkgdir/usr/share/$_pkgname/utils/generate-domains-blocklist"
 	install -Dm 755 utils/generate-domains-blocklist/generate-domains-blocklist.py "$pkgdir/usr/bin/generate-domains-blocklist"
-	# systemd service/socket
-	install -Dm 644 ../$_pkgname.{service,socket} -t "$pkgdir/usr/lib/systemd/system/"
+	# systemd service
+	install -Dm 644 ../$_pkgname.service -t "$pkgdir/usr/lib/systemd/system/"
 	# license
 	install -Dm 644 LICENSE -t "$pkgdir/usr/share/licenses/$_pkgname"
 	# docs
