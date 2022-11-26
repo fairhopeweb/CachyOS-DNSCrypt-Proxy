@@ -58,7 +58,7 @@ post_remove() {
 	echo -e "---------------------------------------------------"
 	echo -e "| Reverting CachyOS-DNSCrypt-Proxy Configurations |"
 	echo -e "---------------------------------------------------"
-	rm -rf /etc/dnscrypt-proxy
+	rm -rf /etc/*dnscrypt* && rm -rf /usr/lib/systemd/system/*dnscrypt*
 	echo -e "-------------------------------------------"
 	echo -e "| Configuring & Restarting NetworkManager |"
 	echo -e "-------------------------------------------"
